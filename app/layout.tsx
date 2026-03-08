@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
+import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -31,6 +32,11 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
 
+  // Manifest
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
   // Theme color para la barra de navegación
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#cfd73f" },
@@ -38,15 +44,10 @@ export const metadata: Metadata = {
   ],
 
   // Viewport para PWA
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-
-  // Manifest
-  manifest: "/manifest.json",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -55,11 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${manrope.variable} antialiased font-manrope`}
       >
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
