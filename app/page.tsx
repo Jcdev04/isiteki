@@ -54,7 +54,7 @@ function LoginScreen() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-[#cfd73f]/10 border border-[#cfd73f]/20 mb-6">
             <span className="text-4xl">💰</span>
           </div>
-          <h1 className="text-4xl font-bold text-[#cfd73f] mb-3">Fini</h1>
+          <h1 className="text-4xl font-bold text-[#cfd73f] mb-3">Isiteki</h1>
           <p className="text-white/50 text-lg">
             Tus finanzas personales,
             <br />
@@ -250,7 +250,7 @@ export default function Home() {
             <div className="relative z-10 flex items-start justify-between">
               {/* Title section */}
               <div className="flex flex-col gap-1 pr-4">
-                <h1 className="text-3xl font-bold text-[#cfd73f]">Fini</h1>
+                <h1 className="text-3xl font-bold text-[#cfd73f]">Isiteki</h1>
                 <p className="text-base font-medium text-white/70">
                   Registra tus movimientos al instante
                 </p>

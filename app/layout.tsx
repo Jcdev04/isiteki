@@ -10,25 +10,25 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Fini - Finanzas Personales",
+  title: "Isiteki - Finanzas Personales",
   description: "Registra tus gastos e ingresos de forma rápida y sencilla",
   
   // Configuración de íconos para PWA
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/fini-logo.png", sizes: "192x192", type: "image/png" },
-      { url: "/fini-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/fini-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "180x180", type: "image/png" },
     ],
   },
 
   // Configuración para iOS (iPhone/iPad)
   appleWebApp: {
     capable: true,
-    title: "Fini",
+    title: "Isiteki",
     statusBarStyle: "black-translucent",
   },
 

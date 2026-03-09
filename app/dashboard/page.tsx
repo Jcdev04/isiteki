@@ -109,7 +109,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-[#000000] relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a] pointer-events-none" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#cfd73f]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#9b8dd8]/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -119,7 +119,7 @@ export default function DashboardPage() {
           {/* Header */}
           <div className="relative px-6 pt-6 pb-6 mb-6 overflow-hidden rounded-b-3xl bg-neutral-900 border-b border-white/5">
             <div className="absolute inset-0 bg-white/5 backdrop-blur-xl rounded-b-3xl" />
-            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-[#cfd73f] to-[#cfd73f] opacity-20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-48 h-48 bg-linear-to-br from-[#cfd73f] to-[#cfd73f] opacity-20 rounded-full blur-3xl pointer-events-none" />
             
             <div className="relative z-10 flex items-start justify-between">
               {/* Title section */}
