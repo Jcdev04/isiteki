@@ -1,6 +1,6 @@
 {
-  "name": "Fini - Finanzas Personales",
-  "short_name": "Fini",
+  "name": "Isiteki - Finanzas Personales",
+  "short_name": "Isiteki",
   "description": "Registra tus gastos e ingresos de forma rápida y sencilla",
   "start_url": "/",
   "display": "standalone",
@@ -9,13 +9,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/fini-logo.png",
+      "src": "/isiteki-logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/fini-logo.png",
+      "src": "/isiteki-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -1,8 +1,8 @@
-# 💰 Fini - Personal Finance Tracker
+# 💰 Isiteki - Personal Finance Tracker
 
 A modern, mobile-first personal finance tracker built with Next.js and Google Sheets. Track your expenses and income with a beautiful, intuitive interface.
 
-![Fini App](https://img.shields.io/badge/Next.js-16.1-black?style=for-the-badge&logo=next.js)
+![Isiteki App](https://img.shields.io/badge/Next.js-16.1-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)
 
@@ -27,8 +27,8 @@ A modern, mobile-first personal finance tracker built with Next.js and Google Sh
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Jcdev04/fini.git
-cd fini
+git clone https://github.com/Jcdev04/isiteki.git
+cd isiteki
 ```
 
 ### 2. Install Dependencies
@@ -43,7 +43,7 @@ npm install
 
 1. Go to [Google Sheets](https://sheets.google.com)
 2. Create a new spreadsheet
-3. Name it "Fini - Personal Finance" (or whatever you prefer)
+3. Name it "Isiteki - Personal Finance" (or whatever you prefer)
 4. Create a sheet named "Enero" (or your preferred month name)
 5. Add the following headers in row 1:
    - **Column A**: Fecha
@@ -100,7 +100,7 @@ function doPost(e) {
 6. Click the gear icon ⚙️ next to "Select type"
 7. Choose **Web app**
 8. Configure:
-   - **Description**: Fini Finance Tracker
+   - **Description**: Isiteki Finance Tracker
    - **Execute as**: Me
    - **Who has access**: Anyone
 9. Click **Deploy**
@@ -177,7 +177,7 @@ Update them in `app/page.tsx` to match your preference.
 ## 🏗️ Project Structure
 
 ```
-fini/
+isiteki/
 ├── app/
 │   ├── api/
 │   │   └── sheets/

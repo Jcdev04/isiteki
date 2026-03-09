@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
+import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -9,28 +10,33 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Fini - Finanzas Personales",
+  title: "Isiteki - Finanzas Personales",
   description: "Registra tus gastos e ingresos de forma rápida y sencilla",
   
   // Configuración de íconos para PWA
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/fini-logo.png", sizes: "192x192", type: "image/png" },
-      { url: "/fini-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/fini-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/isiteki-logo.png", sizes: "180x180", type: "image/png" },
     ],
   },
 
   // Configuración para iOS (iPhone/iPad)
   appleWebApp: {
     capable: true,
-    title: "Fini",
+    title: "Isiteki",
     statusBarStyle: "black-translucent",
   },
 
+  // Manifest
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
   // Theme color para la barra de navegación
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#cfd73f" },
@@ -38,15 +44,10 @@ export const metadata: Metadata = {
   ],
 
   // Viewport para PWA
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-
-  // Manifest
-  manifest: "/manifest.json",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -55,11 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${manrope.variable} antialiased font-manrope`}
       >
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
